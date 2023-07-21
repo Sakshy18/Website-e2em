@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {Routes, Route, useNavigate} from 'react-router-dom';
 import validator from 'validator'
+import TIGER from '../images/tiger.png'
 // import './preBook.css'
 export default function PreBook() {
    
@@ -115,6 +116,11 @@ export default function PreBook() {
           
         </div>
       </form>
+      <div className='make-in-india'>
+        <img src={TIGER}  alt='made-in-india' className='make-in-india-img'/>
+
+
+      </div>
     </div>
   );
 }

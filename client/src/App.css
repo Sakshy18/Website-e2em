@@ -1075,3 +1075,18 @@ pre {
     border-radius: 61px;
     background-image: linear-gradient(40deg, #52B69A , #48CA0D);
 }
+.make-in-india{
+  display: flex;
+  margin-top: 15px;
+  justify-content: right;
+  align-items:end;
+  width: 100%;
+  margin-right: 10px;
+  margin-bottom: 0;
+  /* float: right; */
+}
+
+.blog-container{
+  height: 20em;
+  background-color: #000;
+}

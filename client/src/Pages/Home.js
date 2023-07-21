@@ -14,6 +14,7 @@ import w3 from '../images/w3.png'
 import w4 from '../images/w4.png'
 import w5 from '../images/w5.png'
 import IMG20 from '../images/img20.png'
+import APP from '../images/our-app.png'
 import APPSTORE from '../images/appstore.png'
 import GPLAY from '../images/googleplay.png'
 import CYCMOB from '../images/appe2em.png'
@@ -266,7 +267,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='cyc-img-cont'>
-                        <img src={CYCMOB} className ='cyce2em' alt='cyc-mob' />
+                        <img src={APP} className ='cyce2em' alt='cyc-mob' />
                         {/* <img src={MOBILE} className='mobile-img' alt='mobile'/> */}
                         {/* <img src={CYCLE} className='cycle-img' alt='cycle'/> */}
                     </div>

@@ -3,7 +3,9 @@ import PartnersCarosel from '../Components/PartnersCarosel'
 import BIRTH from '../images/birth.png'
 import TELECOM from '../images/Telecom.png'
 import DI from '../images/DI.png'
-
+import Blog1 from './Blog1'
+// import Blog2 from './Blog2'
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 
 const blogs = [
@@ -26,6 +28,20 @@ const blogs = [
 
 
 export default function About() {
+  const navigate = useNavigate();
+
+  const navigateToBlog1 = () => {
+    // 👇️ navigate to /contacts
+    navigate('/blog1');
+  };
+  const navigateToBlog2 = () => {
+    // 👇️ navigate to /contacts
+    navigate('/blog1');
+  };
+  const navigateToBlog3 = () => {
+    // 👇️ navigate to /contacts
+    navigate('/book');
+  };
 
   return (
     <>
@@ -105,7 +121,11 @@ export default function About() {
                     {text}
                   </div>
                   <div className='blog-btn-cont'>
-                    <button type='submit' className='blog-btn' >Read More</button>
+                    <button type='submit' className='blog-btn' onClick={navigateToBlog1}>Read More</button>
+                    <Routes>
+                            <Route path="/blog1" element={<Blog1 />} />
+                          
+                          </Routes>
                   </div>
                 </div>
               </div>
